@@ -1,0 +1,84 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+.dominicana {
+    float: left;
+    margin: 5px;
+    padding: 15px;
+    max-width: 300px;
+    height: 300px;
+    border: 1px solid black;
+}
+</style>
+
+</head>
+<body>
+
+<h1>SportX</h1>
+
+<div class="dominicana">
+  <h2>La Nacional Noche</h2>
+  {% for obj in object_list %}
+
+  {{ obj.primera }}</br>
+  {{ obj.segunda }}</br>
+  {{ obj.tercera }}</br>
+  {{ obj.updated }}
+
+    {% endfor %}
+</div>
+
+<div class="dominicana">
+  <h2>Quiniela Pale</h2>
+  {% for obj in object_list %}
+
+  {{ obj.primera }}</br>
+  {{ obj.segunda }}</br>
+  {{ obj.tercera }}</br>
+  {{ obj.updated }}
+
+    {% endfor %}
+
+
+</div>
+
+<div class="dominicana">
+  <h2>LOTERIA REAL</h2>
+  {% for obj in object_list %}
+
+  {{ obj.primera }}
+
+  {% endfor %}
+</div>
+
+<div class="dominicana">
+  <h2>LOTO POOL</h2>
+  <p>The City of New York is the most populous city in the United States.</p>
+  <p>New York is an important center for international diplomacy and has been described as the cultural and financial capital of the world.</p>
+</div>
+
+<div class="dominicana">
+  <h2>PEGA MAS</h2>
+  <p>The City of New York is the most populous city in the United States.</p>
+  <p>New York is an important center for international diplomacy and has been described as the cultural and financial capital of the world.</p>
+</div>
+
+
+</body>
+</html>
+
+
+
+<!--
+    {% for obj in object_list %}
+
+    {{ obj.title }}</br>
+    <h3>Primera: {{ obj.primera }}</br>
+    <h3>Segunda: {{ obj.segunda }}</br>
+    <h3>Tercera: {{ obj.tercera }}</br>
+
+    {% endfor %}
+-->
